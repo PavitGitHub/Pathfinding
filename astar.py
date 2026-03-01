@@ -1,9 +1,9 @@
 """
 A* Search
-Uses f(n) = g(n) + h(n)
-h is Manhattan distance heuristic
+Optimality:
+Completeness:
 Time Complexity:
-Space Complexity: 
+Space Complexity:
 """
 
 import pygame
@@ -13,7 +13,7 @@ from grid import make_grid, draw, get_clicked_pos, reconstruct_path
 
 
 def heuristic(p1, p2):
-    """Manhattan distance heuristic."""
+    """ Manhattan distance heuristic """
     x1, y1 = p1
     x2, y2 = p2
     return abs(x1 - x2) + abs(y1 - y2)
